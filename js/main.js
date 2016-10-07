@@ -5,6 +5,7 @@ var width = $(window).width();
 $(document).ready(function() {
 	responsivness();
 	scrollAnimation();
+	$('#loading').fadeOut();
 });
 
 $(window).resize(function() {
@@ -65,6 +66,8 @@ $('#mobile-menu').on('click', function() {
 	$('#navbar').fadeToggle();
 });
 
+
+/** Smooth Anchor Links */
 $(document).on('click', 'a', function(event){
     event.preventDefault();
 
