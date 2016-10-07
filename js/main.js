@@ -68,9 +68,8 @@ $('#mobile-menu').on('click', function() {
 
 
 /** Smooth Anchor Links */
-$(document).on('click', 'a', function(event){
+$(document).on('click', 'a.anchor_link', function(event){
     event.preventDefault();
-
     $('html, body').animate({
         scrollTop: $( $.attr(this, 'href') ).offset().top
     }, 500);

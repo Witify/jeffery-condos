@@ -63,9 +63,9 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-                <li><a href="#zone"><?php $trans->get('pages.zone') ?></a></li>
-                <li><a href="#plans"><?php $trans->get('pages.plans') ?></a></li>
-                <li><a href="#contact"><?php $trans->get('pages.contact') ?></a></li>
+                <li><a href="#zone" class="anchor_link"><?php $trans->get('pages.zone') ?></a></li>
+                <li><a href="#plans" class="anchor_link"><?php $trans->get('pages.plans') ?></a></li>
+                <li><a href="#contact" class="anchor_link"><?php $trans->get('pages.contact') ?></a></li>
                 <?php if($language == 'en') : ?>
                     <li><a href="/fr/<?php echo strtolower($pageTitle) ?>">FR</a></li>
                 <?php else : ?>
