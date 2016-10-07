@@ -22,12 +22,8 @@ $router->get('/home', function($language) {
     loadView($language, 'home');
 });
 
-$router->get('/posts/:id', function($language, $id) {
-    loadView($language, 'home');
-});
-
-$router->post('/posts/:id', function($language, $id) {
-    loadView($language, 'home');
+$router->post('/contact', function($language) {
+    loadView($language, 'contactengine');
 });
 
 try {

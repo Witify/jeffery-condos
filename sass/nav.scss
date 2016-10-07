@@ -1,8 +1,8 @@
 .navbar {
 	height: $navHeight;
-	background-color: #fff;
+	background-color: rgba(0,0,0,0.5);
 	border: none;
-	border-bottom: solid transparent 1px;
+	border-bottom: none;
 	transition: 0.4s;
 	z-index: 1000;
 
@@ -16,6 +16,8 @@
 
 	.navbar-header {
 		height: $navHeight;
+		position: relative;
+		z-index: 10;
 
 		a {
 			transition: 0.5s;
@@ -27,35 +29,53 @@
 				top: 1px;
 				transition: 0.4s;
 				fill: #333;
-				height: 26px;
+				height: 100px;
 			}
 		}
 	}
 
 	.collapse.navbar-collapse {
 		height: $navHeight;
-		float: right;
+		position: relative;
 
 		.nav.navbar-nav {
 			height: $navHeight;
+			padding-top: 40px;
+			width: 100%;
+			position: absolute;
+			padding-left: 180px;
 
 			li {
 				height: $navHeight;
 
 				a {
-					line-height: $navHeight / 2;
-					height: $navHeight;
-					font-weight: 600;
-					font-size: 0.7em;
-					letter-spacing: 2px;
-					text-transform: uppercase;
-					color: #666;
-					border-bottom: 2px rgba(255,255,255,0.01) solid;
+					font-weight: 500;
+					font-size: 0.9em;
+					color: #fff;
 					transition: 0.2s;
+					padding: 0 20px;
 
-					&:hover, &.active {
-						color: lighten($dark_blue, 20);
+					&:hover, &.active, &:focus {
+						color: darken(#fff, 20);
 						background-color: initial;
+					}
+				}
+
+				&.left {
+					float: right;
+					color: #fff;
+					font-size: 0.9em;
+
+					span, strong {
+						display: inline-block;
+					}
+
+					span {
+						font-weight: 300;
+					}
+
+					strong {
+						color: #fff;
 					}
 				}
 			}
@@ -63,50 +83,18 @@
 	}
 
 	&.bg {
-		background: #fff;
-		border-bottom: solid #eee 1px;
-		height: $navHeight2;
-		.navbar-toggle {
-			margin-top: 20px;
-		}
-		.navbar-header, .navbar-collapse.collapse {
-			height: $navHeight2;
-
-			a {
-				height: $navHeight2;
-				line-height: $navHeight2 / 1.7;
-
-				svg {
-					top: 7px;
-					fill: #333;
-					height: 35px;
-				}
-			}
-
-			.nav.navbar-nav {
-				height: $navHeight2;
-
-				li {
-					height: $navHeight2;
-
-					a {
-						line-height: $navHeight2 / 1.7;
-						height: $navHeight2;
-					}
-				}
-			}
-		} 
+		// Scroll Styles
 	}
 }
 
 .sub-menu {
-	background-color: darken($dark_blue, 10);
+	background-color: darken($brown, 10);
 	padding: 12px 0;
 
 	a {
 		transition: 0.4s;
 		&:hover {
-			color: lighten($dark_blue, 20);
+			color: lighten($brown, 20);
 		}
 	}
 

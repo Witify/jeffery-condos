@@ -1,18 +1,22 @@
 <?php
 
-$EmailFrom = Trim(stripslashes($_POST['email'])); 
-$EmailTo = "francois@witify.io";
+header('Content-Type: application/json');
 
-$subject = Trim(stripslashes($_POST['type']));
+$EmailFrom = Trim(stripslashes($_POST['email']));
+$EmailTo = "francois@witify.io";
 
 $name = Trim(stripslashes($_POST['name']));
 $email = Trim(stripslashes($_POST['email']));
+$phone = Trim(stripslashes($_POST['phone']));
 $message = Trim(stripslashes($_POST['message']));
 
+$subject = 'Courriel de ' + $name + 'venant de jefferycondos.com';
+
 // Validation
-$validationOK=true;
+$validationOK = true;
+
 if (!$validationOK) {
-	header('Location: contact.php?success=0');
+	echo json_encode(array('success' => false));
 	exit;
 }
 
@@ -27,65 +31,25 @@ $body .= "Email: ";
 $body .= $email;
 $body .= "\n";
 
-
-if($subject == "career") {
-	$city = Trim(stripslashes($_POST['city']));
-
-	$body .= "City: ";
-	$body .= $city;
-	$body .= "\n";
-}
-
-if($subject == "press") {
-	$business = Trim(stripslashes($_POST['business']));
-
-	$body .= "Business: ";
-	$body .= $business;
-	$body .= "\n";
-}
-
-if($subject == "business") {
-
-	$business = Trim(stripslashes($_POST['business']));
-	$application = Trim(stripslashes($_POST['application']));
-	$number_of_vehicules = Trim(stripslashes($_POST['number_of_vehicules']));
-	$daily_distance = Trim(stripslashes($_POST['daily_distance']));
-
-	$body .= "Business: ";
-	$body .= $business;
-	$body .= "\n";
-
-	$body .= "Application: ";
-	$body .= $application;
-	$body .= "\n";
-
-	$body .= "Number of vehicules: ";
-	$body .= $number_of_vehicules;
-	$body .= "\n";
-
-	$body .= "Daily distance: ";
-	$body .= $daily_distance;
-	$body .= "\n";
-}
+$body .= "Phone: ";
+$body .= $phone;
+$body .= "\n";
 
 $body .= "Message: ";
 $body .= $message;
 $body .= "\n";
 
-var_dump($EmailTo);
-var_dump($subject);
-var_dump($body);
-var_dump($EmailFrom);
-
-
 // Send email 
 $success = mail($EmailTo, $subject, $body, "From: <$EmailFrom>");
 
 // Redirect to success page 
-if ($success){
-	header('Location: contact.php?success=true');
+if ($success) {
+	echo json_encode(array('success' => true));
+	exit();
 }
-else{
-	header('Location: contact.php?success=false');
+else {
+	echo json_encode(array('success' => false));
+	http_response_code(500);
+	exit();
 }
 ?>

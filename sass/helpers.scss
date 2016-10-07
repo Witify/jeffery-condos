@@ -33,6 +33,7 @@
 	vertical-align: middle;
 }
 
+// Margin
 .bm-no {
 	margin-bottom: 0px;
 }
@@ -73,3 +74,29 @@
 	margin-top: 60px;
 }
 
+// Padding
+
+.bp-no {
+	padding-bottom: 0px !important;
+}
+
+.bp-xs {
+	padding-bottom: 10px;
+}
+
+.bp-sm {
+	padding-bottom: 20px;
+}
+
+.bp-md {
+	padding-bottom: 50px;
+}
+
+.bp-lg {
+	padding-bottom: 60px;
+}
+
+
+.tp-no {
+	padding-top: 0px !important;
+}

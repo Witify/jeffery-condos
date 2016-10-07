@@ -1,19 +1,35 @@
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
-
+    .slider-selector {
+        .content .slide {
+            height: 80px;
+            width: 130px;
+            margin: 0 5px;
+        }
+    }
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
+    .navbar .collapse.navbar-collapse .nav.navbar-nav li.left span {
+        display: none !important;
+    }
 
+    .slider-selector {
+        .content .slide {
+            height: 60px;
+            width: 100px;
+            margin: 0 5px;
+        }
+    }
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
     .navbar {
         height: initial;
-        background-color: #fff;
-        border-bottom: 1px solid #eee;
+        background-color: transparent;
+        border-bottom: none;
 
         .navbar-toggle {
             margin-top: 14px;
@@ -29,6 +45,7 @@
                 line-height: initial;
 
                 svg {
+                    height: 26px;
                     top: 3px !important;
                 }
             }
@@ -58,41 +75,42 @@
                         line-height: initial;
                         height: initial;
                     }
-                }
+                }   
             }
         }
 
         &.bg {
-            height: initial;
-            .navbar-toggle {
-                margin-top: 14px;
-            }
-            .navbar-header, .navbar-collapse.collapse {
-                height: initial;
-
-                a {
-                    height: initial;
-                    line-height: initial;
-
-                    svg {
-                        height: 26px;
-                    }
-                }
-
-                .nav.navbar-nav {
-                    height: initial;
-
-                    li {
-                        height: initial;
-
-                        a {
-                            line-height: initial;
-                            height: initial;
-                        }
-                    }
-                }
-            } 
+            background-color: #fff;
         }
+    }
+
+    .title {
+        h1, h2 {
+            font-size: 3em;
+        }
+        p {
+            font-size: 1em;
+        }
+    }
+
+    .slider-selector {
+        .content .slide {
+            height: 15px;
+            width: 15px;
+            background-color: rgba(0,0,0,0.5);
+            background-image: none;
+            border-radius: 10px;
+            border: 1px #fff solid;
+            margin: 0 5px;
+
+            &.active {
+                background-color: #fff;
+            }
+        }
+    }
+
+    .block {
+        width: 100%;
     }
 }
 
@@ -104,4 +122,21 @@
 /* Custom, iPhone Retina */ 
 @media only screen and (max-width : 320px) {
     
+}
+
+/* Height for fullpage divs */ 
+@media only screen and (max-height : 700px) {
+    .fullpage {
+        display: block;
+
+        .v-center {
+            padding: 100px 0;
+            padding-top: 170px;
+            transform: none;
+        }
+    }
+    
+    .slider-selector {
+        position: initial; 
+    }
 }

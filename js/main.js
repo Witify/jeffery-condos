@@ -17,8 +17,6 @@ function responsivness() {
 
 	if(height > 700)
 		$('.fullpage').css({ 'height' : height });
-	else
-		$('.fullpage').css({ 'padding' : '50px 0' });
 }
 
 /** Scroll Animations **/
@@ -65,6 +63,14 @@ function scrollAnimation() {
 /** Mobile Menu **/
 $('#mobile-menu').on('click', function() {
 	$('#navbar').fadeToggle();
+});
+
+$(document).on('click', 'a', function(event){
+    event.preventDefault();
+
+    $('html, body').animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top
+    }, 500);
 });
 
 

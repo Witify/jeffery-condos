@@ -21,3 +21,25 @@
 		opacity: 1;
 	}
 }
+
+// VueJS Fade Animation
+.fade-transition {
+	opacity: 1;
+	transition: 2s;
+}
+
+.fade-enter, .fade-leave {
+	opacity: 0;
+}
+
+.slide-transition {
+	opacity: 1;
+	transition: 1s;
+	transform: translateY(0px);
+}
+
+.slide-enter, .slide-leave {
+	opacity: 0;
+	transform: translateY(-60px);
+}
+

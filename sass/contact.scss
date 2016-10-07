@@ -1,0 +1,40 @@
+.contact {
+	h2 {
+		font-family: 'Roboto', 'Arial';
+		letter-spacing: 0em;
+		text-transform: none;
+		color: $gold;
+		line-height: 37px;
+	}
+
+	p {
+		color: #333;
+		font-size: 1.3em;
+	}
+	
+
+	.coordinates {
+
+		margin-top: 40px;
+
+		h4 {
+			font-weight: 600;
+			margin: 0;
+		}
+
+		p {
+			font-size: 1em;
+			margin: 0;
+		}
+	}
+
+	form {
+		margin-top: 60px;
+	}
+
+}
+
+#map {
+	height: 500px;
+	width: 100%;
+}

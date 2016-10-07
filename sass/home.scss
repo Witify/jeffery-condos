@@ -1,0 +1,37 @@
+.home {
+	.fullpage {
+		color: #fff;
+		position: relative;
+	}
+}
+
+.slide {
+	
+	background-size: cover;
+	background-position: center;
+
+	&.slide1 {
+		background-image: url('/img/3.JPG');
+	}
+	&.slide2 {
+		background-image: url('/img/2.JPG');
+	}
+	&.slide3 {
+		background-image: url('/img/1.JPG');
+	}
+	&.slide4 {
+		background-image: url('/img/4.JPG');
+	}
+	&.slide5 {
+		background-image: url('/img/5.JPG');
+	}
+	&.slide6 {
+		background-image: url('/img/6.JPG');
+	}
+
+	&.cover {
+		background-color: rgba(0,0,0,0.5);
+		z-index: 1000;
+	}
+}
+			

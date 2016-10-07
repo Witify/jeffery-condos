@@ -1,17 +1,30 @@
 .btn {
-	border-radius: 20px;
-	padding: 6px 30px;
+	border-radius: 4px;
+	padding: 8px 30px;
 	font-weight: 800;
-	font-style: italic;
 	text-transform: uppercase;
 	font-size: 0.8em;
 	border: none;
+	background-color: transparent;
+	border: 2px solid $gold;
+	color: $gold;
+	transition: 0.4s;
+
+	&:hover {
+		color: #fff;
+		background-color: $gold;
+	}
 
 	&.btn-primary {
-		background-color: lighten($dark_blue, 20);
+		background-color: $gold;
+		color: #fff;
+		border: none !important;
+		width: 100%;
+		border-radius: 0px;
+		padding: 13px 30px;
 
 		&:hover {
-			background-color: $dark_blue;
+			background-color: lighten($gold, 10);
 		}
 	}
 }
@@ -19,10 +32,10 @@
 .link {
 	font-size: 1.2em;
 	font-weight: 600;
-	color: $light_blue;
+	color: $gold;
 	transition: 0.3s;
 
 	&:hover {
-		color: $dark_blue;
+		color: $brown;
 	}
 }

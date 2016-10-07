@@ -6,7 +6,7 @@
     <meta name="author" content="François Lévesque">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Witify - <?php echo $pageTitle ?></title>
+    <title>Jeffery Condos - <?php echo $pageTitle ?></title>
 
     <!-- Main CSS -->
     <link href="/css/main.css" rel="stylesheet">
