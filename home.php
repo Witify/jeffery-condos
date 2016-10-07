@@ -197,7 +197,7 @@
                     <div class="col-md-6">
                         <div class="plan-slide">
                             <div class="plan" transition="slide">
-                                <img v-bind:src="'/img/plans/' + currentCondo.n + '.png'" alt="Studio Plan">
+                                <img v-bind:src="'/img/plans/' + currentCondo.n + '.PNG'" alt="Studio Plan">
                             </div>
                         </div>
                     </div>
