@@ -25,14 +25,18 @@
 }
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 768px) {
+@media only screen and (max-width : 767px) {
     .navbar {
         height: initial;
-        background-color: transparent;
+        background-color: #fff;
         border-bottom: none;
 
         .navbar-toggle {
             margin-top: 14px;
+
+            .icon-bar {
+                background-color: #333;
+            }
         }
 
         .navbar-header {
@@ -65,6 +69,8 @@
             background-color: #fff;
             float: none;
             margin: 0;
+            
+
             .nav.navbar-nav {
                 height: initial;
                 margin: 0;
@@ -91,7 +97,7 @@
                 }   
             }
         }
-
+        
         &.bg {
             background-color: #fff;
         }
