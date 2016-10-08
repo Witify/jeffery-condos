@@ -7,7 +7,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#home">
+            <a class="navbar-brand anchor_link" href="#home">
                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                      viewBox="0 0 357.7 231.7" style="enable-background:new 0 0 357.7 231.7;" xml:space="preserve">
                 <style type="text/css">

@@ -39,6 +39,7 @@
             height: initial;
             position: relative;
             z-index: 2;
+            border-bottom: 1px solid #eee;
 
             a {
                 height: initial;
@@ -64,16 +65,28 @@
             background-color: #fff;
             float: none;
             margin: 0;
-            border-bottom: 1px solid #eee;
             .nav.navbar-nav {
                 height: initial;
                 margin: 0;
+                padding: 30px 0px;
+                background-color: #fff;
                 li {
                     height: initial;
+                    padding: 10px 0;
+                    font-size: 1.3em;
+
+                    &.left {
+                        float: initial;
+
+                        strong {
+                            color: #333;
+                        }
+                    }
 
                     a {
                         line-height: initial;
                         height: initial;
+                        color: #333;
                     }
                 }   
             }
@@ -111,6 +124,23 @@
 
     .block {
         width: 100%;
+    }
+
+    .plans .title-bar a {
+        display: block;
+        width: 100%;
+    }
+    
+    .plans .plan-slide {
+
+        height: initial;
+        .plan {
+            height: 100%;
+            position: initial;
+            img {
+                max-height: 100%;
+            }
+        }
     }
 }
 

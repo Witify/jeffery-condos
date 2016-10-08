@@ -7,7 +7,7 @@
 	z-index: 1000;
 
 	.navbar-toggle .icon-bar {
-		background-color: #333;
+		background-color: #fff;
 	}
 
 	.navbar-toggle {
@@ -83,7 +83,9 @@
 	}
 
 	&.bg {
-		// Scroll Styles
+		.navbar-toggle .icon-bar {
+			background-color: #333;
+		}
 	}
 }
 
