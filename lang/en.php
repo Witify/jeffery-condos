@@ -102,5 +102,7 @@ return array(
     "contact.phone" => "Phone number",
     "contact.btn" => "Send",
     "contact.error" => "There was an error while sending the message. Make sure you have completed all fields.",
+    "contact.error_title" => "Error!",
     "contact.success" => "Message sent successfully! We will respond as quickly as possible.",
+    "contact.success_title" => "Success!",
 );

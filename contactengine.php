@@ -2,8 +2,8 @@
 
 header('Content-Type: application/json');
 
-$EmailFrom = Trim(stripslashes($_POST['email']));
-$EmailTo = "francois@witify.io";
+$EmailFrom = "francois.levesque@live.ca";
+$EmailTo = "francois.levesque@live.ca";
 
 $name = Trim(stripslashes($_POST['name']));
 $email = Trim(stripslashes($_POST['email']));

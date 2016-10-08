@@ -321,10 +321,12 @@
                     dataType: 'json',
                     data: $("#form").serialize(),
                     success: function(data) {
-                        console.log('success');
+                        swal("<?php $trans->get('contact.success_title') ?>", "<?php $trans->get('contact.success') ?>", "success");
+                        $('#form')[0].reset();
                     },
                     error: function(data) {
                         console.log(data);
+                        swal("<?php $trans->get('contact.error_title') ?>", "<?php $trans->get('contact.error') ?>", "error");
                     }
                 });
             });
