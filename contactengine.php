@@ -9,7 +9,7 @@ $EmailTo = [
 ];
 
 $headers = array("From: $EmailFrom",
-    "Reply-To: francois@witify.io",
+    "Reply-To: aurelie@condo514.com",
     "X-Mailer: PHP/" . PHP_VERSION
 );
 
