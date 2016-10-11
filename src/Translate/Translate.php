@@ -14,6 +14,11 @@ class Translate {
 		$_SESSION['lang'] = $this->language;
 	}
 
+	public function currentLang()
+	{
+		echo $this->language;
+	}
+
 	public function get($key)
 	{
 		echo $this->translations[$key];

@@ -235,7 +235,7 @@
                         </div>
                         <div class="buttons">
                             <a href="/files/{{ currentCondo.n }}_JEFFERY CONDOS.pdf" target="_blank" class="btn"><?php $trans->get('plans.pdf') ?></a>
-                            <a href="/files/Jeffery-Devis-Technique.pdf" target="_blank" class="btn"><?php $trans->get('plans.devis') ?></a>
+                            <a href="/files/Jeffery-Devis-Technique-<?php $trans->currentLang() ?>.pdf" target="_blank" class="btn"><?php $trans->get('plans.devis') ?></a>
                         </div>
                         <div class="inclusions"><?php $trans->get('plans.inclusions') ?></div>
                     </div>
