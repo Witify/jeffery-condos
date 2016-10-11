@@ -98,8 +98,14 @@ return array(
     "contact.subtitle" => "Contactez-nous pour en savoir plus <br>sur votre unité et prendre un rendez-vous <br>avec l’un de nos conseillers.",
 
     "contact.bureaux" => "Bureau des ventes",
+    "contact.bureaux.address" => "4286 rue Notre Dame Ouest",
     "contact.week" => "Mercredi au vendredi",
+    "contact.week.hours" => "16h à 19h",
     "contact.weekend" => "Fin de semaine",
+    "contact.weekend.hours" => "12h à 16h",
+
+    "contact.project" => "Adresse du projet",
+    "contact.project.address" => "1860 rue Amherst",
 
     "contact.message" => "Je suis intéressé(e) par...",
     "contact.name" => "Nom complet",

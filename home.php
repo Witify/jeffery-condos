@@ -54,12 +54,12 @@
         <div class="section sector-slider slider-wrapper">
             <div class="slider">
                 <div class="slide cover"></div>
-                <div v-show="currentContextSlide == 6" transition="fade" class="slide slide1"></div>
-                <div v-show="currentContextSlide == 5" transition="fade" class="slide slide2"></div>
-                <div v-show="currentContextSlide == 4" transition="fade" class="slide slide3"></div>
-                <div v-show="currentContextSlide == 3" transition="fade" class="slide slide4"></div>
-                <div v-show="currentContextSlide == 2" transition="fade" class="slide slide5"></div>
-                <div v-show="currentContextSlide == 1" transition="fade" class="slide slide6"></div>
+                <div v-show="currentContextSlide == 6" transition="fade" class="slide slide6"></div>
+                <div v-show="currentContextSlide == 5" transition="fade" class="slide slide5"></div>
+                <div v-show="currentContextSlide == 4" transition="fade" class="slide slide4"></div>
+                <div v-show="currentContextSlide == 3" transition="fade" class="slide slide3"></div>
+                <div v-show="currentContextSlide == 2" transition="fade" class="slide slide2"></div>
+                <div v-show="currentContextSlide == 1" transition="fade" class="slide slide1"></div>
             </div>
             <div v-show="currentContextSlide == 1" transition="fade" class="container t-center bp-md">
                 <div class="title">
@@ -260,18 +260,26 @@
                             <div class="row">
                                 <div class="col-sm-6">
                                     <h4><?php $trans->get('contact.bureaux') ?></h4>
-                                    <p>4286 rue Notre Dame Ouest</p>
+                                    <p><?php $trans->get('contact.bureaux.address') ?></p>
                                     <p>Montréal (Québec)</p>
                                     <p>H4C 1R7</p>
                                     <br>
                                     <p>T 514 205-5559</p>
+                                    <br>
                                 </div>
                                 <div class="col-md-6">
+                                    <h4><?php $trans->get('contact.project') ?></h4>
+                                    <p><?php $trans->get('contact.project.address') ?></p>
+                                    <p>Montréal (Québec)</p>
+                                    <p>H2L 3L6</p>
+                                    <br>
+                                </div>
+                                <div class="col-md-12">
                                     <p><?php $trans->get('contact.week') ?></p>
-                                    <p>16h - 19h </p>
+                                    <p><?php $trans->get('contact.week.hours') ?></p>
                                     <br>
                                     <p><?php $trans->get('contact.weekend') ?></p>
-                                    <p>12h - 16h</p>
+                                    <p><?php $trans->get('contact.weekend.hours') ?></p>
                                 </div>
                             </div>
                         </div>
@@ -339,32 +347,35 @@
         <!-- Google Maps -->
         <script type="text/javascript">
             function initMap() {
+                var position = {lat: 45.520028, lng: -73.562389};
                 var map = new google.maps.Map(document.getElementById('map'), {
                     zoom: 17,
-                    center: {lat: -34.397, lng: 150.644},
+                    center: position,
                     styles: 
                     [{"stylers":[{"visibility":"on"},{"saturation":-100},{"gamma":0.54}]},{"featureType":"road","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"water","stylers":[{"color":"#4d4946"}]},{"featureType":"poi","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"poi","elementType":"labels.text","stylers":[{"visibility":"simplified"}]},{"featureType":"road","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"road.local","elementType":"labels.text","stylers":[{"visibility":"simplified"}]},{"featureType":"water","elementType":"labels.text.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"transit.line","elementType":"geometry","stylers":[{"gamma":0.48}]},{"featureType":"transit.station","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"geometry.stroke","stylers":[{"gamma":7.18}]}]
                 });
 
-                var geocoder = new google.maps.Geocoder();
+                var contentString = '<div id="content">'+
+                      '<div id="siteNotice">'+
+                      '</div>'+
+                      '<h1 id="firstHeading" class="firstHeading" style="color: #333;"><?php $trans->get('contact.project.address') ?>, Montréal, QC H2L 3L6</h1>'+
+                      '</div>';
 
-                geocodeAddress(geocoder, map);
-            }
+                  var infowindow = new google.maps.InfoWindow({
+                    content: contentString
+                  });
 
-            function geocodeAddress(geocoder, resultsMap) {
-                var address = "1860, rue Amherst, Montréal QC H2L 3L6";
-                geocoder.geocode({'address': address}, function(results, status) {
-                    if (status === google.maps.GeocoderStatus.OK) {
-                        resultsMap.setCenter(results[0].geometry.location);
-                        var marker = new google.maps.Marker({
-                        map: resultsMap,
-                        position: results[0].geometry.location
-                    });
-                    } else {
-                        console.log('Geocode was not successful for the following reason: ' + status);
-                    }
-                });
+                  var marker = new google.maps.Marker({
+                    position: position,
+                    map: map,
+                    title: "<?php $trans->get('contact.project.address') ?>"
+                  });
+
+                  marker.addListener('click', function() {
+                    infowindow.open(map, marker);
+                  });
             }
+            
         </script>
 
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAoc8uKiQ2Mw7J4qHUDXoCJYC-diZZZb7g&amp;callback=initMap" async="" defer=""></script>

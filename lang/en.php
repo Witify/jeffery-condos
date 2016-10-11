@@ -98,8 +98,14 @@ return array(
     "contact.subtitle" => "Contact-us to learn more about <br>your unit and to set up a meeting <br>with one of our advisors.",
 
     "contact.bureaux" => "Sales Office",
+    "contact.bureaux.address" => "4286 Notre Dame West Street",
     "contact.week" => "Wednesday to Friday",
+    "contact.week.hours" => "4PM to 7PM",
     "contact.weekend" => "Saturday and Sunday",
+    "contact.weekend.hours" => "12PM to 4PM",
+
+    "contact.project" => "Project Address",
+    "contact.project.address" => "1860 Amherst Street",
 
     "contact.message" => "I am interested in...",
     "contact.name" => "Full name",
