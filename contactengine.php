@@ -16,9 +16,10 @@ $EmailTo = [
 ];
 
 $headers = array("From: $EmailFrom",
-    "Reply-To: $EmailTo",
+    "Reply-To: francois@witify.io",
     "X-Mailer: PHP/" . PHP_VERSION
 );
+
 $headers = implode("\r\n", $headers);
 
 $name = Trim(stripslashes($_POST['name']));
