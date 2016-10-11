@@ -10,9 +10,9 @@ return array(
     "plan_visit" => "Plan a visit now!",
 
     "home.title" => "URBAN CONDOMINIUMS",
-    "home.subtitle" => "A unique quality of life right in the heart of montreal",
-    "home.starting_at" => "Starting at $199 184 including taxes.",
-    "home.delivery" => "Delivery april 2017",
+    "home.subtitle" => "A unique quality of life right in the heart of&nbsp;montreal",
+    "home.starting_at" => "Starting at $199 184 including&nbsp;taxes.",
+    "home.delivery" => "Delivery april&nbsp;2017",
 
     "404.message" => "Page not found :(",
 
