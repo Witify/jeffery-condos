@@ -3,17 +3,12 @@
 header('Content-Type: application/json');
 
 $EmailFrom = Trim(stripslashes($_POST['email']));
-/*$EmailTo = [
+
+$EmailTo = [
 	"etienne@condo514.com",
 	"aurelie@condo514.com",
 	"mathieu@condo514.com"
-]*/
-
-$EmailTo = [
-	"francois@witify.io",
-	"chijipon@hotmail.com",
-	"francois.levesque@live.ca"
-];
+]
 
 $headers = array("From: $EmailFrom",
     "Reply-To: francois@witify.io",
