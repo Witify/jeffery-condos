@@ -10,6 +10,16 @@
 	background-size: cover;
 	background-position: center;
 
+	&.hero1 {
+		background-image: url('/img/hero/1.jpg');
+	}
+	&.hero2 {
+		background-image: url('/img/hero/2.jpg');
+	}
+	&.hero3 {
+		background-image: url('/img/hero/3.jpg');
+	}
+
 	&.slide1 {
 		background-image: url('/img/3.jpg');
 	}

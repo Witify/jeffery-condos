@@ -9,9 +9,9 @@
         <div class="fullpage">
             <div class="slider">
                 <div class="slide cover"></div>
-                <div v-show="currentHomeSlide == 3 || currentHomeSlide == 2 || currentHomeSlide == 1" transition="fade" class="slide slide3"></div>
-                <div v-show="currentHomeSlide == 2 || currentHomeSlide == 1" transition="fade" class="slide slide2"></div>
-                <div v-show="currentHomeSlide == 1" transition="fade" class="slide slide1"></div>
+                <div v-show="currentHomeSlide == 3 || currentHomeSlide == 2 || currentHomeSlide == 1" transition="fade" class="slide hero3"></div>
+                <div v-show="currentHomeSlide == 2 || currentHomeSlide == 1" transition="fade" class="slide hero2"></div>
+                <div v-show="currentHomeSlide == 1" transition="fade" class="slide hero1"></div>
             </div>
             <div class="v-center">
                 <div class="container t-center">
@@ -25,9 +25,9 @@
             </div>
             <div class="slider-selector">
                 <div class="content">
-                    <div class="slide slide1" v-bind:class="{'active': currentHomeSlide==1}" @click="changeHomeSlide(1)"></div>
-                    <div class="slide slide2" v-bind:class="{'active': currentHomeSlide==2}" @click="changeHomeSlide(2)"></div>
-                    <div class="slide slide3" v-bind:class="{'active': currentHomeSlide==3}" @click="changeHomeSlide(3)"></div>
+                    <div class="slide hero1" v-bind:class="{'active': currentHomeSlide==1}" @click="changeHomeSlide(1)"></div>
+                    <div class="slide hero2" v-bind:class="{'active': currentHomeSlide==2}" @click="changeHomeSlide(2)"></div>
+                    <div class="slide hero3" v-bind:class="{'active': currentHomeSlide==3}" @click="changeHomeSlide(3)"></div>
                 </div>
             </div>
         </div>
@@ -182,10 +182,10 @@
                             <h2><?php $trans->get('plans.title') ?></h2>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                <div class="col-md-6">
                         <div class="title-bar">
                             <div class="links">
-                                <a @click="currentType = 'studio'" v-bind:class="{ 'active':currentType=='studio'}"><?php $trans->get('plans.title') ?></a>
+                                <a @click="currentType = 'studio'" v-bind:class="{ 'active':currentType=='studio'}"><?php $trans->get('plans.studio') ?></a>
                                 <a @click="currentType = '1_chamber'" v-bind:class="{ 'active':currentType=='1_chamber' }"><?php $trans->get('plans.1_chamber') ?></a>
                                 <a @click="currentType = '2_chambers'" v-bind:class="{ 'active':currentType=='2_chambers' }"><?php $trans->get('plans.2_chambers') ?></a>
                             </div>
@@ -223,15 +223,19 @@
                                 </div>
                                 <div class="col-xs-6">
                                     <span class="value">{{ currentCondo.surface_int }} pi2</span>
-                                    <span class="value">{{ currentCondo.surface_ext }} pi2</span>
-                                    <span class="value">{{ currentCondo.ext }}</span>
+                                    <span v-if="currentCondo.surface_ext == 0" class="value">ND</span>
+                                    <span v-else class="value">{{ currentCondo.surface_ext }} pi2</span>
+                                    <span v-if="currentCondo.ext == 'balcony'" class="value"><?php $trans->get('plans.balcony') ?></span>
+                                    <span v-if="currentCondo.ext == 'terrasse'" class="value"><?php $trans->get('plans.terrasse') ?></span>
+                                    <span v-if="currentCondo.ext == 'ND'" class="value">ND</span>
                                     <span class="value">{{ currentCondo.floor }}</span>
-                                    <span class="value">{{ currentCondo.price }} $ +TX</span>
+                                    <span class="value">{{ (currentCondo.price).formatNumber(0, '.', ' ') }} $ +TX</span>
                                 </div>
                             </div>
                         </div>
                         <div class="buttons">
-                            <a href="/files/{{ currentCondo.n }}_JEFFERY CONDOS.pdf" class="btn"><?php $trans->get('plans.pdf') ?></a>
+                            <a href="/files/{{ currentCondo.n }}_JEFFERY CONDOS.pdf" target="_blank" class="btn"><?php $trans->get('plans.pdf') ?></a>
+                            <a href="/files/Jeffery-Devis-Technique.pdf" target="_blank" class="btn"><?php $trans->get('plans.devis') ?></a>
                         </div>
                         <div class="inclusions"><?php $trans->get('plans.inclusions') ?></div>
                     </div>
@@ -256,12 +260,11 @@
                             <div class="row">
                                 <div class="col-sm-6">
                                     <h4><?php $trans->get('contact.bureaux') ?></h4>
-                                    <p>1860, rue Amherst</p>
+                                    <p>4286 rue Notre Dame Ouest</p>
                                     <p>Montréal (Québec)</p>
-                                    <p>H2L 3L6</p>
+                                    <p>H4C 1R7</p>
                                     <br>
                                     <p>T 514 205-5559</p>
-                                    <p>info@jefferycondos.ca</p>
                                 </div>
                                 <div class="col-md-6">
                                     <p><?php $trans->get('contact.week') ?></p>
