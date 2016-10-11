@@ -13,7 +13,7 @@ $EmailTo = [
 	"francois@witify.io",
 	"chijipon@hotmail.com",
 	"francois.levesque@live.ca"
-]
+];
 
 $headers = array("From: $EmailFrom",
     "Reply-To: $EmailTo",
