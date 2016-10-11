@@ -6815,13 +6815,15 @@ form .form-group textarea.form-control {
     width: 100px;
     margin: 0 5px; } }
 /* Small Devices, Tablets */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .navbar {
     height: initial;
-    background-color: transparent;
+    background-color: #fff;
     border-bottom: none; }
     .navbar .navbar-toggle {
       margin-top: 14px; }
+      .navbar .navbar-toggle .icon-bar {
+        background-color: #333; }
     .navbar .navbar-header {
       height: initial;
       position: relative;
