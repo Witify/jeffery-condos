@@ -9,9 +9,9 @@
         <div class="fullpage">
             <div class="slider">
                 <div class="slide cover"></div>
-                <div v-show="currentHomeSlide == 3 || currentHomeSlide == 2 || currentHomeSlide == 1" transition="fade" class="slide slide3"></div>
-                <div v-show="currentHomeSlide == 2 || currentHomeSlide == 1" transition="fade" class="slide slide2"></div>
-                <div v-show="currentHomeSlide == 1" transition="fade" class="slide slide1"></div>
+                <div v-show="currentHomeSlide == 3 || currentHomeSlide == 2 || currentHomeSlide == 1" transition="fade" class="slide hero3"></div>
+                <div v-show="currentHomeSlide == 2 || currentHomeSlide == 1" transition="fade" class="slide hero2"></div>
+                <div v-show="currentHomeSlide == 1" transition="fade" class="slide hero1"></div>
             </div>
             <div class="v-center">
                 <div class="container t-center">
@@ -25,9 +25,9 @@
             </div>
             <div class="slider-selector">
                 <div class="content">
-                    <div class="slide slide1" v-bind:class="{'active': currentHomeSlide==1}" @click="changeHomeSlide(1)"></div>
-                    <div class="slide slide2" v-bind:class="{'active': currentHomeSlide==2}" @click="changeHomeSlide(2)"></div>
-                    <div class="slide slide3" v-bind:class="{'active': currentHomeSlide==3}" @click="changeHomeSlide(3)"></div>
+                    <div class="slide hero1" v-bind:class="{'active': currentHomeSlide==1}" @click="changeHomeSlide(1)"></div>
+                    <div class="slide hero2" v-bind:class="{'active': currentHomeSlide==2}" @click="changeHomeSlide(2)"></div>
+                    <div class="slide hero3" v-bind:class="{'active': currentHomeSlide==3}" @click="changeHomeSlide(3)"></div>
                 </div>
             </div>
         </div>
