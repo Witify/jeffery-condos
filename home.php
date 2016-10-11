@@ -16,10 +16,10 @@
             <div class="v-center">
                 <div class="container t-center">
                     <div class="container container-md">
-                        <div v-show="currentHomeSlide == 3 || currentHomeSlide == 2 || currentHomeSlide == 1" class="title">
+                        <div v-show="currentHomeSlide == 3" class="title">
                             <h1 class="animation slideUp"><?php $trans->get('home.delivery') ?></h1>                        
                         </div>
-                        <div v-show="currentHomeSlide == 2 || currentHomeSlide == 1" class="title">
+                        <div v-show="currentHomeSlide == 2" class="title">
                             <h1 class="animation slideUp"><?php $trans->get('home.starting_at') ?></h1>                        
                         </div>
                         <div v-show="currentHomeSlide == 1" class="title">
