@@ -25,6 +25,7 @@
 	}
 	&.slide2 {
 		background-image: url('/img/district/2.jpg');
+		background-position: center 100%;
 	}
 	&.slide3 {
 		background-image: url('/img/district/3.jpg');
@@ -40,7 +41,7 @@
 	}
 
 	&.cover {
-		background-color: rgba(0,0,0,0.5);
+		background-color: rgba(0,0,0,0.3);
 		z-index: 1000;
 	}
 }

@@ -11,6 +11,8 @@ return array(
 
     "home.title" => "URBAN CONDOMINIUMS",
     "home.subtitle" => "A unique quality of life right in the heart of montreal",
+    "home.starting_at" => "Starting at $199 184 including taxes.",
+    "home.delivery" => "Delivery april 2017",
 
     "404.message" => "Page not found :(",
 
@@ -75,8 +77,8 @@ return array(
 
     "plans.title" => "Plans",
     "plans.studio" => "Studio",
-    "plans.1_chamber" => "1 chamber",
-    "plans.2_chambers" => "2 chambers",
+    "plans.1_chamber" => "1 bedroom",
+    "plans.2_chambers" => "2 bedrooms",
 
     "plans.balcony" => "Balcony",
     "plans.terrasse" => "Deck",
@@ -99,6 +101,7 @@ return array(
 
     "contact.bureaux" => "Sales Office",
     "contact.bureaux.address" => "4286 Notre Dame West Street",
+    "contact.bureaux.address_2" => "Montreal (Quebec)",
     "contact.week" => "Wednesday to Friday",
     "contact.week.hours" => "4PM to 7PM",
     "contact.weekend" => "Saturday and Sunday",

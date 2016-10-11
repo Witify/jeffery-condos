@@ -11,6 +11,8 @@ return array(
 
     "home.title" => "CONDOMINIUMS URBAINS",
     "home.subtitle" => "Une qualité de vie unique en plein cœur de Montréal.",
+    "home.starting_at" => "À partir de 199 184$ taxes incluses.",
+    "home.delivery" => "Livraison avril 2017.",
 
     "404.message" => "Page non trouvée :(",
 
@@ -99,9 +101,10 @@ return array(
 
     "contact.bureaux" => "Bureau des ventes",
     "contact.bureaux.address" => "4286 rue Notre Dame Ouest",
+    "contact.bureaux.address_2" => "Montréal (Québec)",
     "contact.week" => "Mercredi au vendredi",
     "contact.week.hours" => "16h à 19h",
-    "contact.weekend" => "Fin de semaine",
+    "contact.weekend" => "Samedi et dimanche",
     "contact.weekend.hours" => "12h à 16h",
 
     "contact.project" => "Adresse du projet",

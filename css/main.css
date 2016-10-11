@@ -6768,7 +6768,8 @@ form .form-group textarea.form-control {
   .slide.slide1 {
     background-image: url("/img/district/1.jpg"); }
   .slide.slide2 {
-    background-image: url("/img/district/2.jpg"); }
+    background-image: url("/img/district/2.jpg");
+    background-position: center 100%; }
   .slide.slide3 {
     background-image: url("/img/district/3.jpg"); }
   .slide.slide4 {
@@ -6778,7 +6779,7 @@ form .form-group textarea.form-control {
   .slide.slide6 {
     background-image: url("/img/district/6.jpg"); }
   .slide.cover {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.3);
     z-index: 1000; }
 
 .contact h2 {

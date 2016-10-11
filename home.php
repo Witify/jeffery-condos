@@ -16,7 +16,13 @@
             <div class="v-center">
                 <div class="container t-center">
                     <div class="container container-md">
-                        <div class="title">
+                        <div v-show="currentHomeSlide == 3 || currentHomeSlide == 2 || currentHomeSlide == 1" class="title">
+                            <h1 class="animation slideUp"><?php $trans->get('home.delivery') ?></h1>                        
+                        </div>
+                        <div v-show="currentHomeSlide == 2 || currentHomeSlide == 1" class="title">
+                            <h1 class="animation slideUp"><?php $trans->get('home.starting_at') ?></h1>                        
+                        </div>
+                        <div v-show="currentHomeSlide == 1" class="title">
                             <h1 class="animation slideUp"><?php $trans->get('home.title') ?></h1>                        
                             <p class="animation slideUp" data-delay="100"><?php  $trans->get('home.subtitle') ?></p>
                         </div>
@@ -261,7 +267,7 @@
                                 <div class="col-sm-6">
                                     <h4><?php $trans->get('contact.bureaux') ?></h4>
                                     <p><?php $trans->get('contact.bureaux.address') ?></p>
-                                    <p>Montréal (Québec)</p>
+                                    <p><?php $trans->get('contact.bureaux.address_2') ?></p>
                                     <p>H4C 1R7</p>
                                     <br>
                                     <p>T 514 205-5559</p>
@@ -270,7 +276,7 @@
                                 <div class="col-md-6">
                                     <h4><?php $trans->get('contact.project') ?></h4>
                                     <p><?php $trans->get('contact.project.address') ?></p>
-                                    <p>Montréal (Québec)</p>
+                                    <p><?php $trans->get('contact.bureaux.address_2') ?></p>
                                     <p>H2L 3L6</p>
                                     <br>
                                 </div>
