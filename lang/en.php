@@ -23,22 +23,22 @@ return array(
     "intro.date" => "— Delivery April 2017 —",
 
     "parc.1.title" => "5 minutes away from lafontaine park.",
-    "parc.1.subtitle" => "All-year-round, enjoy the calm and tranquil environment of one of Montreal’s most beautiful parks.",
+    "parc.1.subtitle" => "All-year-round, enjoy the calm and tranquil environment of one of Montreal’s most beautiful&nbsp;parks.",
 
     "parc.2.title" => "A VIBRANT NEIGHBOURHOOD",
-    "parc.2.subtitle" => "Coffee shops, stores and merchants are close by and contribute to a pleasant neighbourhood life. ",
+    "parc.2.subtitle" => "Coffee shops, stores and merchants are close by and contribute to a pleasant neighbourhood&nbsp;life. ",
 
     "parc.3.title" => "PLEASANT AND WELCOMING ENVIRONMENT ",
-    "parc.3.subtitle" => "A perfect combination of the action-packed Ville-Marie and Gay Village sectors, along with the tranquility of the Plateau.",
+    "parc.3.subtitle" => "A perfect combination of the action-packed Ville-Marie and Gay Village sectors, along with the tranquility of the&nbsp;Plateau.",
 
     "parc.4.title" => "THE ST-JACQUES MARKET IS ONLY STEPS AWAY!",
-    "parc.4.subtitle" => "Top-quality artisans, butchers and bakers await you in one of the most beautiful historic markets in Montreal.  ",
+    "parc.4.subtitle" => "Top-quality artisans, butchers and bakers await you in one of the most beautiful historic markets in&nbsp;Montreal.",
 
     "parc.5.title" => "ONLY A 15 MINUTES WALK FROM THE FAMOUS QUARTIER DES SPECTACLES",
-    "parc.5.subtitle" => "Walking distance from the unmatched cultural offering of the Quartier des Spectacles. ",
+    "parc.5.subtitle" => "Walking distance from the unmatched cultural offering of the Quartier des&nbsp;Spectacles.",
 
     "parc.6.title" => "NUMEROUS FORMS OF PUBLIC TRANSPORT NEARBY",
-    "parc.6.subtitle" => "Located near two metro stations, Sherbrooke and Beaudry, the Jeffery is also close to the path of several different bus lines. ",
+    "parc.6.subtitle" => "Located near two metro stations, Sherbrooke and Beaudry, the Jeffery is also close to the path of several different bus&nbsp;lines. ",
 
     "activities_1" => "The Jeffery is a beautiful condominium project, combining a contemporary style with classic lines and an urban twist. Located between the orange and green subway lines (Sherbrooke and Beaudry), the Jeffery offers an ideal living environment in a highly sought-after area of Downtown Montreal.",
     "activities_2" => "Located on Amherst Street, near Ontario East, the Jeffery offers a nice balance between the liveliness of the city’s main arteries and the perks of living in a peaceful neighbourhood. Only steps away from the Jeffery are a number of cafés, restaurants, antique shops and a public market, all of which become a part of the locals’ daily life. ",
@@ -77,6 +77,10 @@ return array(
     "plans.studio" => "Studio",
     "plans.1_chamber" => "1 chamber",
     "plans.2_chambers" => "2 chambers",
+
+    "plans.balcony" => "Balcony",
+    "plans.terrasse" => "Deck",
+
     "plans.unit" => "Unit",
     "plans.price" => "Price",
     "plans.surface_int" => "Interior surface",
@@ -86,6 +90,7 @@ return array(
     "plans.floor" => "nd floor",
     "plans.floor_1" => "st floor",
     "plans.pdf" => "PDF file of the sales plan",
+    "plans.devis" => "PDF file of the technical specifications",
     "plans.inclusions" => "<h4>Including :</h4>
                             <p>Soundproofing and high-quality materials. Wall-mounted air conditioner, microwave, extractor hood, kitchen with white quartz countertops and private storage space are all included. Garage spaces are available (limited spots)</p>",
 
@@ -97,7 +102,7 @@ return array(
     "contact.weekend" => "Saturday and Sunday",
 
     "contact.message" => "I am interested in...",
-    "contact.name" => "Complete name",
+    "contact.name" => "Full name",
     "contact.email" => "Email",
     "contact.phone" => "Phone number",
     "contact.btn" => "Send",

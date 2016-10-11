@@ -19,4 +19,9 @@ class Translate {
 		echo $this->translations[$key];
 	}
 
+	public function value($key)
+	{
+		return $this->translations[$key];
+	}
+
 }

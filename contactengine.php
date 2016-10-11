@@ -2,8 +2,24 @@
 
 header('Content-Type: application/json');
 
-$EmailFrom = "francois.levesque@live.ca";
-$EmailTo = "francois.levesque@live.ca";
+$EmailFrom = Trim(stripslashes($_POST['email']));
+/*$EmailTo = [
+	"etienne@condo514.com",
+	"aurelie@condo514.com",
+	"mathieu@condo514.com"
+]*/
+
+$EmailTo = [
+	"francois@witify.io",
+	"chijipon@hotmail.com",
+	"francois.levesque@live.ca"
+]
+
+$headers = array("From: $EmailFrom",
+    "Reply-To: $EmailTo",
+    "X-Mailer: PHP/" . PHP_VERSION
+);
+$headers = implode("\r\n", $headers);
 
 $name = Trim(stripslashes($_POST['name']));
 $email = Trim(stripslashes($_POST['email']));
@@ -40,7 +56,9 @@ $body .= $message;
 $body .= "\n";
 
 // Send email 
-$success = mail($EmailTo, $subject, $body, "From: <$EmailFrom>");
+foreach($EmailTo as $to) {
+	$success = mail($to, $subject, $body, $headers);
+}
 
 // Redirect to success page 
 if ($success) {
