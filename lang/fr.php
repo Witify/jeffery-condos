@@ -11,7 +11,7 @@ return array(
 
     "home.title" => "CONDOMINIUMS URBAINS",
     "home.subtitle" => "Une qualité de vie unique en plein cœur de&nbsp;Montréal",
-    "home.starting_at" => "À partir de 199 184$&nbsp;+&nbsp;taxes",
+    "home.starting_at" => "À partir de 184 110$&nbsp;+&nbsp;taxes",
     "home.delivery" => "Livraison avril&nbsp;2017",
 
     "404.message" => "Page non trouvée :(",
@@ -19,7 +19,7 @@ return array(
     "intro.title" => "UN NOUVEAU VENU",
     "intro.title_2" => "arrive sur la très dynamique rue Amherst !",
     "intro.text_1" => "Le Jeffery offre un milieu de vie idéal dans un secteur très prisé du centre de l’île de Montréal. Le projet comprend 11 unités, incluant des studios de style loft et des logements avec 1 ou 2 chambres fermées. De plus, les unités du dernier étage sont sur deux niveaux avec mezzanine. Une opportunité rêvée pour ceux qui cherchent une construction de qualité irréprochable, à la hauteur de leur investissement.",
-    "intro.price" => "À partir de 199 184$ à 429 614$ taxes incluses.",
+    "intro.price" => "À partir de 184 110$ à 377 625$ + taxes.",
     "intro.text_2" => "Toutes les unités sont conçues en prenant en compte les besoins des citadins qui cherchent une demeure confortable, intime et fonctionnelle, ainsi qu’un accès aux avantages de la vie en ville.",
     "intro.text_3" => "Un soin particulier est consacré à la qualité des finitions et des matériaux employés à la fois dans la construction de l’immeuble et dans la décoration intérieure des condos. La construction du Jeffery répond donc aux plus hauts standards de construction, en plus d’avoir un emplacement de choix.",
     "intro.date" => "— Livraison Avril 2017 —",

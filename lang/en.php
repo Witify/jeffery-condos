@@ -11,7 +11,7 @@ return array(
 
     "home.title" => "URBAN CONDOMINIUMS",
     "home.subtitle" => "A unique quality of life right in the heart of&nbsp;montreal",
-    "home.starting_at" => "Starting at $199 184&nbsp;+&nbsp;taxes",
+    "home.starting_at" => "Starting at $184 110&nbsp;+&nbsp;taxes",
     "home.delivery" => "Delivery april&nbsp;2017",
 
     "404.message" => "Page not found :(",
@@ -19,7 +19,7 @@ return array(
     "intro.title" => "A NEWCOMER",
     "intro.title_2" => "Is coming to lively amherst street!",
     "intro.text_1" => "The Jeffery offers an ideal living environment in a highly sought-after area of Downtown Montreal. The project includes 11 units, with loft-style studios and units with 1 or 2 closed bedrooms. The units that are located on the last floor include two floors, with a mezzanine. An excellent opportunity for those that are looking for a high-quality construction that lives up to their investment.",
-    "intro.price" => "Starting at $199 184 to $429 614 including taxes",
+    "intro.price" => "Starting at $184 110 to $377 625 + taxes",
     "intro.text_2" => "Each unit is designed in a way that takes into account the needs of urban dwellers looking for a home that offers comfort, privacy and functionality, in addition to giving access to the benefits of city living.",
     "intro.text_3" => "Special attention is paid to the quality of the finishing touches, as well as the materials used both for the building’s construction and for the interior decoration in the condos. The Jeffrey adheres to the highest building standards and is situated in a prime location.",
     "intro.date" => "— Delivery April 2017 —",
