@@ -6178,7 +6178,8 @@ strong {
 .fullpage {
   width: 100%;
   margin: 0;
-  display: flex; }
+  display: flex;
+  overflow-x: hidden; }
   .fullpage .v-center {
     margin: auto;
     width: 100%;
@@ -6609,7 +6610,8 @@ p {
 .fullpage .slider-selector {
   position: absolute;
   bottom: 20px;
-  padding-bottom: 50px; }
+  padding-bottom: 50px;
+  left: 0; }
 
 .slideRight {
   transform: translateX(40px);
