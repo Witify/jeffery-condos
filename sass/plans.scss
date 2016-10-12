@@ -122,7 +122,29 @@
 				max-width: 100%;
 			}
 		}
-	}	
+	}
+
+	.slider-nav {
+		.slider-prev, .slider-next {
+			width: 35px;
+			height: 35px;
+			position: absolute;
+			top: 200px;
+			background-size: cover;
+			cursor: pointer;
+			z-index: 1000;
+		}
+
+		.slider-prev {
+			left: -5px;
+			background-image: url('/img/svg/left.svg');
+		}
+
+		.slider-next {
+			right: -5px;
+			background-image: url('/img/svg/right.svg');
+		}
+	}
 
 	.slider-buttons {
 			

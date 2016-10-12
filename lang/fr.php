@@ -11,7 +11,7 @@ return array(
 
     "home.title" => "CONDOMINIUMS URBAINS",
     "home.subtitle" => "Une qualité de vie unique en plein cœur de&nbsp;Montréal.",
-    "home.starting_at" => "À partir de 199 184$ taxes&nbsp;incluses.",
+    "home.starting_at" => "À partir de 199 184$&nbsp;+&nbsp;taxes.",
     "home.delivery" => "Livraison avril&nbsp;2017.",
 
     "404.message" => "Page non trouvée :(",

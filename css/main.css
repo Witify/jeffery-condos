@@ -6725,6 +6725,20 @@ p {
       width: auto !important;
       max-height: 530px;
       max-width: 100%; }
+.plans .slider-nav .slider-prev, .plans .slider-nav .slider-next {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: 200px;
+  background-size: cover;
+  cursor: pointer;
+  z-index: 1000; }
+.plans .slider-nav .slider-prev {
+  left: -5px;
+  background-image: url("/img/svg/left.svg"); }
+.plans .slider-nav .slider-next {
+  right: -5px;
+  background-image: url("/img/svg/right.svg"); }
 .plans .slider-buttons {
   width: 100%;
   text-align: center;

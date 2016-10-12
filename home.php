@@ -188,7 +188,7 @@
                             <h2><?php $trans->get('plans.title') ?></h2>
                         </div>
                     </div>
-                <div class="col-md-6">
+                    <div class="col-md-6">
                         <div class="title-bar">
                             <div class="links">
                                 <a @click="currentType = 'studio'" v-bind:class="{ 'active':currentType=='studio'}"><?php $trans->get('plans.studio') ?></a>
@@ -200,6 +200,12 @@
                 </div>
 
                 <div class="row stack same-height">
+                    <div class="col-md-12">
+                        <div class="slider-nav">
+                            <div class="slider-prev" @click="prevPlan()"></div>
+                            <div class="slider-next" @click="nextPlan()"></div>
+                        </div>
+                    </div>
                     <div class="col-md-6">
                         <div class="plan-slide">
                             <div class="plan" transition="slide">
@@ -235,7 +241,7 @@
                                     <span v-if="currentCondo.ext == 'terrasse'" class="value"><?php $trans->get('plans.terrasse') ?></span>
                                     <span v-if="currentCondo.ext == 'ND'" class="value">ND</span>
                                     <span class="value">{{ currentCondo.floor }}</span>
-                                    <span class="value">{{ (currentCondo.price).formatNumber(0, '.', ' ') }} $ +TX</span>
+                                    <span class="value">{{ (currentCondo.price).formatNumber(0, '.', ' ') }}$ + taxes</span>
                                 </div>
                             </div>
                         </div>
@@ -246,7 +252,7 @@
                         <div class="inclusions"><?php $trans->get('plans.inclusions') ?></div>
                     </div>
                     <div class="col-md-12 slider-buttons">
-                        <div v-for="c in condosByCurrentType()" class="slider-button" v-bind:class="{ 'active':condo == c.n }" @click="condo=c.n"></div>
+                        <div v-for="c in condosByCurrentType(true)" class="slider-button" v-bind:class="{ 'active':condo == c.n }" @click="condo=c.n"></div>
                     </div>
                 </div>
     
@@ -387,6 +393,8 @@
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAoc8uKiQ2Mw7J4qHUDXoCJYC-diZZZb7g&amp;callback=initMap" async="" defer=""></script>
 
         <script>
+        var currentCondo12;
+
             var app = new Vue({
                 el: "body",
                 data: function() {
@@ -519,8 +527,11 @@
                     }, 6000);
                 },
                 computed: {
-                    currentCondo: function(){
-                        return this.condos[this.condo];
+                    currentCondo:{
+                        cache: false,
+                        get: function() {
+                            return this.condos[this.condo];
+                        }
                     }
                 },
                 methods: {
@@ -532,17 +543,50 @@
                         this.currentContextSlide = nSlide;
                         this.autoSlideContext = false;
                     },
-                    condosByCurrentType: function() {
-                        var vm = this; 
-                        var condos = [];
-                        $.each(vm.condos, function(index, condo) {
-                            if(condo.type == vm.currentType)
-                                condos.push(condo);
-                        });
+                    condosByCurrentType: function(onTitle = false) {
+                        var condos = {};
+                        var i = 0;
+                        for(var key in this.condos) {
+                            if(this.condos.hasOwnProperty(key)) {
+                                if(this.condos[key].type == this.currentType) {
+                                    condos[i] = this.condos[key];
+                                    i++;
+                                }
+                            }
+                        }
 
-                        vm.condo = condos[0].n;
+                        if(onTitle)
+                            this.condo = condos[0].n;
                                             
                         return condos;
+                    },
+                    prevPlan: function() {
+                        var vm = this;
+                        var condos = jQuery.extend(true, {}, vm.condosByCurrentType());
+                        var length = Object.keys(condos).length;
+                        for(var i = 0; i < length; i++) {
+                            if(condos[i].n == vm.condo) {
+                                if(i == 0)
+                                    this.condo = condos[length - 1].n;                           
+                                else
+                                    this.condo = condos[i - 1].n;
+                                return;
+                            }
+                        }
+                    },
+                    nextPlan: function() {
+                        var vm = this;
+                        var condos = jQuery.extend(true, {}, vm.condosByCurrentType());
+                        var length = Object.keys(condos).length;
+                        for(var i = 0; i < length; i++) {
+                            if(condos[i].n == vm.condo) {
+                                if(i == length - 1)
+                                    this.condo = condos[0].n;                           
+                                else
+                                    this.condo = condos[i + 1].n;
+                                return;
+                            }
+                        }
                     }
                 }
             });
