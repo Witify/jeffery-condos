@@ -11,7 +11,7 @@ return array(
 
     "home.title" => "URBAN CONDOMINIUMS",
     "home.subtitle" => "A unique quality of life right in the heart of&nbsp;montreal",
-    "home.starting_at" => "Starting at $199 184&nbsp;+&nbsp;taxes.",
+    "home.starting_at" => "Starting at $199 184&nbsp;+&nbsp;taxes",
     "home.delivery" => "Delivery april&nbsp;2017",
 
     "404.message" => "Page not found :(",
