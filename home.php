@@ -166,7 +166,7 @@
       --><div class="block">
         <div class="content">
           <div class="subtitle">
-            <img src="/img/svg/bike.svg" alt="Déplacements" style="height: 70px; margin: -15px 0"; >
+            <img src="/img/svg/bike.svg" alt="Déplacements" style="height: 70px; margin: -15px 0" >
             <h3><?php $trans->get('activities.deplacement.title') ?></h3>
           </div>
           <p><?php $trans->get('activities.deplacement.1') ?></p>
@@ -184,6 +184,7 @@
         <p><?php $trans->get('activities.magasinage.2') ?></p>
         <p><?php $trans->get('activities.magasinage.3') ?></p>
       </div>
+    </div>
     </div>
     
     <div class="anchor" id="plans"></div>
