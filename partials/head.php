@@ -22,11 +22,6 @@
     <!-- TypeKit -->
     <!-- (...) -->
 
-</head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.28-csp/vue.min.js"></script>
 
-<div id="loading">
-    <div class="spinner">
-        <div class="dot1"></div>
-        <div class="dot2"></div>
-    </div>
-</div>
+</head>

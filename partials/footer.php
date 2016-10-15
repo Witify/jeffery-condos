@@ -10,6 +10,5 @@
 <script src="/bower_components/slick-carousel/slick/slick.min.js"></script>
 <script src="/bower_components/PACE/pace.min.js"></script>
 <script src="/bower_components/chart.js/dist/Chart.min.js"></script>
-<script src="/bower_components/vue/dist/vue.js"></script>
 <script src="/bower_components/sweetalert/dist/sweetalert.min.js"></script>
 <script src="/js/main.js"></script>
