@@ -552,7 +552,9 @@
             this.currentContextSlide = nSlide;
             this.autoSlideContext = false;
           },
-          condosByCurrentType: function(onTitle = false) {
+          condosByCurrentType: function(onTitle) {
+            if(onTitle === undefined)
+              onTitle = false;
             var condos = {};
             var i = 0;
             for(var key in this.condos) {
