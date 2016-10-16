@@ -323,7 +323,7 @@
               </div>
               
               <div class="form-group">
-                <input type="text" name="phone" id="phone" class="form-control" placeholder="<?php $trans->get('contact.phone')?>" />
+                <input type="text" name="phone" id="phone" class="form-control" placeholder="<?php $trans->get('contact.phone')?>" required />
               </div>
               
               <div class="form-group">
