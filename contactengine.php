@@ -20,7 +20,7 @@ $email = Trim(stripslashes($_POST['email']));
 $phone = Trim(stripslashes($_POST['phone']));
 $message = Trim(stripslashes($_POST['message']));
 
-$subject = 'Courriel de ' + $name + 'venant de jefferycondos.com';
+$subject = 'Demande d’informations Jeffery Condos';
 
 // Validation
 $validationOK = true;
