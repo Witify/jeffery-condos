@@ -20,7 +20,7 @@ $email = Trim(stripslashes($_POST['email']));
 $phone = Trim(stripslashes($_POST['phone']));
 $message = Trim(stripslashes($_POST['message']));
 
-$subject = 'Demande d’informations Jeffery Condos';
+$subject = "Demande d’informations Jeffery Condos";
 
 // Validation
 $validationOK = true;
