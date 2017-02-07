@@ -6,12 +6,11 @@ header('Content-Type: application/json');
 $EmailFrom = Trim(stripslashes($_POST['email']));
 
 $EmailTo = [
-	"aurelie@condo514.com",
-	"alex@condo514.com"
+	"francois@witify.io"
 ];
 
 $headers = array("From: $EmailFrom",
-    "Reply-To: aurelie@condo514.com",
+    "Reply-To: francois@witify.io",
     "X-Mailer: PHP/" . PHP_VERSION
 );
 
