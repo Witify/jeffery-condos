@@ -6,7 +6,8 @@ header('Content-Type: application/json');
 $EmailFrom = Trim(stripslashes($_POST['email']));
 
 $EmailTo = [
-	"aurelie@condo514.com"
+	"aurelie@condo514.com",
+	"alex@condo514.com"
 ];
 
 $headers = array("From: $EmailFrom",

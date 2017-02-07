@@ -295,11 +295,7 @@
                   <br>
                 </div>
                 <div class="col-md-12">
-                  <p><?php $trans->get('contact.week') ?></p>
-                  <p><?php $trans->get('contact.week.hours') ?></p>
-                  <br>
-                  <p><?php $trans->get('contact.weekend') ?></p>
-                  <p><?php $trans->get('contact.weekend.hours') ?></p>
+                  <h4><?php $trans->get('contact.when') ?></h4>
                 </div>
               </div>
             </div>
