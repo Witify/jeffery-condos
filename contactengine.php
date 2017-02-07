@@ -1,5 +1,6 @@
 <?php
 
+date_default_timezone_set('America/Montreal');
 header('Content-Type: application/json');
 
 $EmailFrom = Trim(stripslashes($_POST['email']));
