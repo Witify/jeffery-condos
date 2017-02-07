@@ -10,6 +10,8 @@ $mail->setFrom(Trim(stripslashes($_POST['email'])), Trim(stripslashes($_POST['na
 $mail->addAddress('francois@witify.io', 'Francois Levesque');
 $mail->addReplyTo('francois@witify.io', 'Francois Levesque');
 
+$mail->isHTML(true);
+
 $mail->Subject = 'Demande d’informations Jeffery Condos';
 
 $name = Trim(stripslashes($_POST['name']));
