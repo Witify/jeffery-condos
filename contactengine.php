@@ -1,6 +1,7 @@
 <?php
-
 require 'vendor/phpmailer/phpmailer/PHPMailerAutoload.php';
+
+header('Content-Type: application/json');
 
 $mail = new PHPMailer();
 
@@ -39,8 +40,13 @@ $body .= "\n";
 $mail->Body = $body;
 
 if(!$mail->send()) {
+	echo json_encode(array('success' => false));
     echo 'Message could not be sent.';
     echo 'Mailer Error: ' . $mail->ErrorInfo;
+    http_response_code(500);
+    exit();
 } else {
+	echo json_encode(array('success' => true));
     echo 'Message has been sent';
+    exit();
 }
