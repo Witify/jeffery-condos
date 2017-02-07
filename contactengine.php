@@ -13,8 +13,8 @@ $phone = Trim(stripslashes($_POST['phone']));
 $message = Trim(stripslashes($_POST['message']));
 
 $mail->setFrom($email, $name);
-$mail->addAddress('francois@witify.io');
-$mail->addReplyTo('francois@witify.io');
+$mail->addAddress('aurelie@condo514.com');
+$mail->addAddress('alex@condo514.com');
 
 $mail->Subject = 'Demande d’informations Jeffery Condos';
 
