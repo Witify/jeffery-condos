@@ -1,42 +1,21 @@
 <?php
 
-error_reporting(-1);
-ini_set('display_errors', 'On');
-set_error_handler("var_dump");
+require 'vendor/phpmailer/phpmailer/PHPMailerAutoload.php';
 
-ini_set("mail.log", "/tmp/mail.log");
-ini_set("mail.add_x_header", TRUE);
+$mail = new PHPMailer;
 
-date_default_timezone_set('America/Montreal');
-header('Content-Type: application/json');
+$mail->setFrom(Trim(stripslashes($_POST['email'])), Trim(stripslashes($_POST['name'])));
+$mail->addAddress('francois@witify.io', 'Francois Levesque');
+$mail->addReplyTo('francois@witify.io', 'Francois Levesque');
 
-$EmailFrom = Trim(stripslashes($_POST['email']));
+$mail->isHTML(true);                                  // Set email format to HTML
 
-$EmailTo = [
-	"francois@witify.io"
-];
-
-$headers = array("From: $EmailFrom",
-    "Reply-To: francois@witify.io",
-    "X-Mailer: PHP/" . PHP_VERSION
-);
-
-$headers = implode("\r\n", $headers);
+$mail->Subject = 'Demande d’informations Jeffery Condos';
 
 $name = Trim(stripslashes($_POST['name']));
 $email = Trim(stripslashes($_POST['email']));
 $phone = Trim(stripslashes($_POST['phone']));
 $message = Trim(stripslashes($_POST['message']));
-
-$subject = "Demande d’informations Jeffery Condos";
-
-// Validation
-$validationOK = true;
-
-if (!$validationOK) {
-	echo json_encode(array('success' => false));
-	exit;
-}
 
 // Prepare email body text
 $body = "";
@@ -57,19 +36,11 @@ $body .= "Message: ";
 $body .= $message;
 $body .= "\n";
 
-// Send email 
-foreach($EmailTo as $to) {
-	$success = mail($to, $subject, $body, $headers);
-}
+$mail->Body = $body;
 
-// Redirect to success page 
-if ($success) {
-	echo json_encode(array('success' => true));
-	exit();
+if(!$mail->send()) {
+    echo 'Message could not be sent.';
+    echo 'Mailer Error: ' . $mail->ErrorInfo;
+} else {
+    echo 'Message has been sent';
 }
-else {
-	echo json_encode(array('success' => false));
-	http_response_code(500);
-	exit();
-}
-?>
