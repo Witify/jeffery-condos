@@ -1,5 +1,12 @@
 <?php
 
+error_reporting(-1);
+ini_set('display_errors', 'On');
+set_error_handler("var_dump");
+
+ini_set("mail.log", "/tmp/mail.log");
+ini_set("mail.add_x_header", TRUE);
+
 date_default_timezone_set('America/Montreal');
 header('Content-Type: application/json');
 
