@@ -4,6 +4,7 @@ require 'vendor/phpmailer/phpmailer/PHPMailerAutoload.php';
 
 $mail = new PHPMailer();
 
+$mail->CharSet = "UTF8";
 
 $name = Trim(stripslashes($_POST['name']));
 $email = Trim(stripslashes($_POST['email']));
@@ -14,11 +15,7 @@ $mail->setFrom($email, $name);
 $mail->addAddress('francois@witify.io');
 $mail->addReplyTo('francois@witify.io');
 
-$mail->isHTML(true);
-
 $mail->Subject = 'Demande d’informations Jeffery Condos';
-
-
 
 // Prepare email body text
 $body = "";
