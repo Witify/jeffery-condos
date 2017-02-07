@@ -2,7 +2,7 @@
 
 require 'vendor/phpmailer/phpmailer/PHPMailerAutoload.php';
 
-$mail = new PHPMailer(true);
+$mail = new PHPMailer();
 
 $mail->CharSet = "UTF-8";
 
