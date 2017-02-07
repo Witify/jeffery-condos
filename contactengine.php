@@ -2,13 +2,13 @@
 
 require 'vendor/phpmailer/phpmailer/PHPMailerAutoload.php';
 
-$mail = new PHPMailer;
+$mail = new PHPMailer(true);
+
+$mail->CharSet = "UTF-8";
 
 $mail->setFrom(Trim(stripslashes($_POST['email'])), Trim(stripslashes($_POST['name'])));
 $mail->addAddress('francois@witify.io', 'Francois Levesque');
 $mail->addReplyTo('francois@witify.io', 'Francois Levesque');
-
-$mail->isHTML(true);                                  // Set email format to HTML
 
 $mail->Subject = 'Demande d’informations Jeffery Condos';
 
