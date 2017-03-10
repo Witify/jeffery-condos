@@ -449,7 +449,7 @@
                 surface_int: 513,
                 surface_ext: 81,
                 ext: "balcony",
-                price: 184680
+                price: 194680
               },
               202 : {
                 n: 202,
@@ -458,7 +458,7 @@
                 surface_int: 510,
                 surface_ext: 0,
                 ext: "balcony",
-                price: 184110
+                price: 194106
               },
               203 : {
                 n: 203,
@@ -467,7 +467,7 @@
                 surface_int: 805,
                 surface_ext: 0,
                 ext: "ND",
-                price: 297850
+                price: 282555
               },
               204 : {
                 n: 204,
