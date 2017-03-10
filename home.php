@@ -231,6 +231,9 @@
               <span v-if="currentCondo.type == 'studio'" class="light"><?php $trans->get('plans.studio') ?></span>
               <span v-if="currentCondo.type == '1_chamber'" class="light"><?php $trans->get('plans.1_chamber') ?></span>
               <span v-if="currentCondo.type == '2_chambers'" class="light"><?php $trans->get('plans.2_chambers') ?></span>
+              <div v-if="currentCondo.sold" class="badge danger">
+                <?php $trans->get('sold') ?>
+              </div>
             </div>
             <div class="description">
               <div class="row stack">
@@ -418,7 +421,8 @@
                 surface_int: "953",
                 surface_ext: "90",
                 ext: "balcony",
-                price: 343080
+                price: 343080,
+                sold: false
               },
               102 : {
                 n: 102,
@@ -427,7 +431,8 @@
                 surface_int: 590,
                 surface_ext: 0,
                 ext: "ND",
-                price: 210630
+                price: 210630,
+                sold: false
               },
               103 : {
                 n: 103,
@@ -436,7 +441,8 @@
                 surface_int: 605,
                 surface_ext: 81,
                 ext: "balcony",
-                price: 219010
+                price: 219010,
+                sold: false
               },
               201 : {
                 n: 201,
@@ -445,7 +451,8 @@
                 surface_int: 513,
                 surface_ext: 81,
                 ext: "balcony",
-                price: 194680
+                price: 194680,
+                sold: true
               },
               202 : {
                 n: 202,
@@ -454,7 +461,8 @@
                 surface_int: 510,
                 surface_ext: 0,
                 ext: "balcony",
-                price: 194106
+                price: 194106,
+                sold: false
               },
               203 : {
                 n: 203,
@@ -463,7 +471,8 @@
                 surface_int: 805,
                 surface_ext: 0,
                 ext: "ND",
-                price: 282555
+                price: 282555,
+                sold: false
               },
               204 : {
                 n: 204,
@@ -472,7 +481,8 @@
                 surface_int: 605,
                 surface_ext: 81,
                 ext: "balcony",
-                price: 226875
+                price: 226875,
+                sold: false
               },
               301 : {
                 n: 301,
@@ -481,7 +491,8 @@
                 surface_int: 706,
                 surface_ext: 346,
                 ext: "terrasse",
-                price: 264750
+                price: 264750,
+                sold: false
               },
               302 : {
                 n: 302,
@@ -490,7 +501,8 @@
                 surface_int: 672,
                 surface_ext: 174,
                 ext: "terrasse",
-                price: 252000
+                price: 252000,
+                sold: false
               },
               303 : {
                 n: 303,
@@ -499,7 +511,8 @@
                 surface_int: 1007,
                 surface_ext: 229,
                 ext: "terrasse",
-                price: 377625
+                price: 377625,
+                sold: false
               },
               304 : {
                 n: 304,
@@ -508,7 +521,8 @@
                 surface_int: 807,
                 surface_ext: 259,
                 ext: "terrasse",
-                price: 298590
+                price: 298590,
+                sold: true
               }
             }
           }

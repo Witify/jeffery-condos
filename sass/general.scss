@@ -22,6 +22,16 @@ body {
 	padding-top: $navHeight;
 }
 
+.badge.danger {
+	background-color: #f44336;
+	color: #fff;
+	padding: 5px 10px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	position: relative;
+	top: -2px;
+}
+
 /** Sections **/
 
 .section {

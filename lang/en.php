@@ -8,6 +8,7 @@ return array(
     "pages.contact" => "Contact",
 
     "plan_visit" => "Plan a visit now!",
+    "sold" => "Sold",
 
     "home.title" => "URBAN CONDOMINIUMS",
     "home.subtitle" => "A unique quality of life right in the heart of&nbsp;montreal",
