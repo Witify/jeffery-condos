@@ -102,10 +102,7 @@ return array(
     "contact.bureaux" => "Bureau des ventes",
     "contact.bureaux.address" => "4286 rue Notre Dame Ouest",
     "contact.bureaux.address_2" => "Montréal (Québec)",
-    "contact.week" => "Mercredi au vendredi",
-    "contact.week.hours" => "16h à 19h",
-    "contact.weekend" => "Samedi et dimanche",
-    "contact.weekend.hours" => "12h à 16h",
+    "contact.when" => "Sur rendez-vous seulement",
 
     "contact.project" => "Adresse du projet",
     "contact.project.address" => "1860 rue Amherst",

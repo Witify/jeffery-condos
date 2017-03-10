@@ -1,34 +1,22 @@
 <?php
+require 'vendor/phpmailer/phpmailer/PHPMailerAutoload.php';
 
 header('Content-Type: application/json');
 
-$EmailFrom = Trim(stripslashes($_POST['email']));
+$mail = new PHPMailer();
 
-$EmailTo = [
-	"aurelie@condo514.com"
-];
-
-$headers = array("From: $EmailFrom",
-    "Reply-To: aurelie@condo514.com",
-    "X-Mailer: PHP/" . PHP_VERSION
-);
-
-$headers = implode("\r\n", $headers);
+$mail->CharSet = "UTF8";
 
 $name = Trim(stripslashes($_POST['name']));
 $email = Trim(stripslashes($_POST['email']));
 $phone = Trim(stripslashes($_POST['phone']));
 $message = Trim(stripslashes($_POST['message']));
 
-$subject = "Demande d’informations Jeffery Condos";
+$mail->setFrom($email, $name);
+$mail->addAddress('aurelie@condo514.com');
+$mail->addAddress('alex@condo514.com');
 
-// Validation
-$validationOK = true;
-
-if (!$validationOK) {
-	echo json_encode(array('success' => false));
-	exit;
-}
+$mail->Subject = 'Demande d’informations Jeffery Condos';
 
 // Prepare email body text
 $body = "";
@@ -49,19 +37,14 @@ $body .= "Message: ";
 $body .= $message;
 $body .= "\n";
 
-// Send email 
-foreach($EmailTo as $to) {
-	$success = mail($to, $subject, $body, $headers);
-}
+$mail->Body = $body;
 
-// Redirect to success page 
-if ($success) {
-	echo json_encode(array('success' => true));
-	exit();
-}
-else {
+if(!$mail->send()) {
 	echo json_encode(array('success' => false));
-	http_response_code(500);
-	exit();
+    http_response_code(500);
+    exit();
+} else {
+	echo json_encode(array('success' => true));
+    http_response_code(200);
+    exit();
 }
-?>

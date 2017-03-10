@@ -102,10 +102,7 @@ return array(
     "contact.bureaux" => "Sales Office",
     "contact.bureaux.address" => "4286 Notre Dame West Street",
     "contact.bureaux.address_2" => "Montreal (Quebec)",
-    "contact.week" => "Wednesday to Friday",
-    "contact.week.hours" => "4PM to 7PM",
-    "contact.weekend" => "Saturday and Sunday",
-    "contact.weekend.hours" => "12PM to 4PM",
+    "contact.when" => "By appointment only",
 
     "contact.project" => "Project Address",
     "contact.project.address" => "1860 Amherst Street",
