@@ -8,6 +8,7 @@ return array(
     "pages.contact" => "Nous Joindre",
 
     "plan_visit" => "Planifiez une visite dès maintenant !",
+    "sold" => "Vendu",
 
     "home.title" => "CONDOMINIUMS URBAINS",
     "home.subtitle" => "Une qualité de vie unique en plein cœur de&nbsp;Montréal",
