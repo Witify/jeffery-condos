@@ -22,7 +22,7 @@ return array(
     "intro.price" => "À partir de 184 110$ à 377 625$ + taxes.",
     "intro.text_2" => "Toutes les unités sont conçues en prenant en compte les besoins des citadins qui cherchent une demeure confortable, intime et fonctionnelle, ainsi qu’un accès aux avantages de la vie en ville.",
     "intro.text_3" => "Un soin particulier est consacré à la qualité des finitions et des matériaux employés à la fois dans la construction de l’immeuble et dans la décoration intérieure des condos. La construction du Jeffery répond donc aux plus hauts standards de construction, en plus d’avoir un emplacement de choix.",
-    "intro.date" => "— Livraison Avril 2017 —",
+    "intro.date" => "— Livraison Juillet 2017 —",
 
     "parc.1.title" => "À 5 minutes à pied <br>du parc lafontaine.",
     "parc.1.subtitle" => "Été comme hiver, profitez du calme et de la tranquillité d’un des plus beaux parcs&nbsp;montréalais.",
