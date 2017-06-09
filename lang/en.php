@@ -106,7 +106,7 @@ return array(
     "contact.when" => "By appointment only",
 
     "contact.project" => "Project Address",
-    "contact.project.address" => "1860 Amherst Street",
+    "contact.project.address" => "1850 Amherst Street",
 
     "contact.message" => "I am interested in...",
     "contact.name" => "Full name",

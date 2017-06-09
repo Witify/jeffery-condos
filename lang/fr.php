@@ -106,7 +106,7 @@ return array(
     "contact.when" => "Sur rendez-vous seulement",
 
     "contact.project" => "Adresse du projet",
-    "contact.project.address" => "1860 rue Amherst",
+    "contact.project.address" => "1850 rue Amherst",
 
     "contact.message" => "Je suis intéressé(e) par...",
     "contact.name" => "Nom complet",
