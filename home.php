@@ -502,7 +502,7 @@
                 surface_ext: 174,
                 ext: "terrasse",
                 price: 252000,
-                sold: false
+                sold: true
               },
               303 : {
                 n: 303,
