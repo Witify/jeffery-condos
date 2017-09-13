@@ -13,7 +13,7 @@ return array(
     "home.title" => "CONDOMINIUMS URBAINS",
     "home.subtitle" => "Une qualité de vie unique en plein cœur de&nbsp;Montréal",
     "home.starting_at" => "À partir de 184 110$&nbsp;+&nbsp;taxes",
-    "home.delivery" => "Livraison avril&nbsp;2017",
+    "home.delivery" => "Livraison été&nbsp;2017",
 
     "404.message" => "Page non trouvée :(",
 
@@ -23,7 +23,7 @@ return array(
     "intro.price" => "À partir de 184 110$ à 377 625$ + taxes.",
     "intro.text_2" => "Toutes les unités sont conçues en prenant en compte les besoins des citadins qui cherchent une demeure confortable, intime et fonctionnelle, ainsi qu’un accès aux avantages de la vie en ville.",
     "intro.text_3" => "Un soin particulier est consacré à la qualité des finitions et des matériaux employés à la fois dans la construction de l’immeuble et dans la décoration intérieure des condos. La construction du Jeffery répond donc aux plus hauts standards de construction, en plus d’avoir un emplacement de choix.",
-    "intro.date" => "— Livraison Juillet 2017 —",
+    "intro.date" => "— Livraison Été 2017 —",
 
     "parc.1.title" => "À 5 minutes à pied <br>du parc lafontaine.",
     "parc.1.subtitle" => "Été comme hiver, profitez du calme et de la tranquillité d’un des plus beaux parcs&nbsp;montréalais.",
@@ -106,7 +106,7 @@ return array(
     "contact.when" => "Sur rendez-vous seulement",
 
     "contact.project" => "Adresse du projet",
-    "contact.project.address" => "1860 rue Amherst",
+    "contact.project.address" => "1850 rue Amherst",
 
     "contact.message" => "Je suis intéressé(e) par...",
     "contact.name" => "Nom complet",

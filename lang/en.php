@@ -13,7 +13,7 @@ return array(
     "home.title" => "URBAN CONDOMINIUMS",
     "home.subtitle" => "A unique quality of life right in the heart of&nbsp;montreal",
     "home.starting_at" => "Starting at $184 110&nbsp;+&nbsp;taxes",
-    "home.delivery" => "Delivery april&nbsp;2017",
+    "home.delivery" => "Delivery summer&nbsp;2017",
 
     "404.message" => "Page not found :(",
 
@@ -23,7 +23,7 @@ return array(
     "intro.price" => "Starting at $184 110 to $377 625 + taxes",
     "intro.text_2" => "Each unit is designed in a way that takes into account the needs of urban dwellers looking for a home that offers comfort, privacy and functionality, in addition to giving access to the benefits of city living.",
     "intro.text_3" => "Special attention is paid to the quality of the finishing touches, as well as the materials used both for the building’s construction and for the interior decoration in the condos. The Jeffrey adheres to the highest building standards and is situated in a prime location.",
-    "intro.date" => "— Delivery July 2017 —",
+    "intro.date" => "— Delivery Summer 2017 —",
 
     "parc.1.title" => "5 minutes away from lafontaine park.",
     "parc.1.subtitle" => "All-year-round, enjoy the calm and tranquil environment of one of Montreal’s most beautiful&nbsp;parks.",
@@ -106,7 +106,7 @@ return array(
     "contact.when" => "By appointment only",
 
     "contact.project" => "Project Address",
-    "contact.project.address" => "1860 Amherst Street",
+    "contact.project.address" => "1850 Amherst Street",
 
     "contact.message" => "I am interested in...",
     "contact.name" => "Full name",

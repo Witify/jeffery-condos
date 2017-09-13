@@ -442,7 +442,7 @@
                 surface_ext: 81,
                 ext: "balcony",
                 price: 219010,
-                sold: false
+                sold: true
               },
               201 : {
                 n: 201,
